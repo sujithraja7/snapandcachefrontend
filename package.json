@@ -26,9 +26,5 @@
   "license": "MIT",
   "devDependencies": {
     "concurrently": "^7.6.0"
-  },
-  "workspaces": [
-    "backend",
-    "mobile"
-  ]
+  }
 }
