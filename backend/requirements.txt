@@ -1,8 +1,0 @@
-flask
-flask-cors
-pillow
-opencv-python
-numpy
-twilio
-requests
-python-dotenv

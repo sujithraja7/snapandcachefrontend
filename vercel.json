@@ -1,12 +1,11 @@
 {
-  "version": 2,
-  "buildCommand": "cd website && npm install && npm run build",
-  "outputDirectory": "website/dist",
-  "framework": null,
+  "buildCommand": "npm run build",
+  "outputDirectory": "dist",
+  "installCommand": "npm install",
   "routes": [
     {
       "src": "/(.*)",
-      "dest": "/website/dist/index.html"
+      "dest": "/$1"
     }
   ]
 }
