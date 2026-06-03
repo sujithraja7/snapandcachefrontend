@@ -2,7 +2,6 @@
   "version": 2,
   "buildCommand": "cd website && npm install",
   "outputDirectory": "website",
-  "public": "website",
   "functions": {
     "backend/api/**/*.js": {
       "memory": 1024,
