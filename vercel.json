@@ -1,7 +1,7 @@
 {
   "version": 2,
-  "buildCommand": "cd website && npm install",
-  "outputDirectory": "website",
+  "buildCommand": "cd website && npm install && npm run build",
+  "outputDirectory": "website/dist",
   "functions": {
     "backend/api/**/*.js": {
       "memory": 1024,
@@ -19,7 +19,7 @@
     },
     {
       "src": "/(.*)",
-      "dest": "/website/index.html",
+      "dest": "/website/dist/index.html",
       "status": 200
     }
   ]
