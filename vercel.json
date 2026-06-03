@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "buildCommand": "npm run build",
+  "buildCommand": "cd officer-dashboard && npm install && npm run build",
   "outputDirectory": "officer-dashboard/dist",
   "functions": {
     "backend/api/**/*.js": {
