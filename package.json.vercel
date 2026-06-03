@@ -1,0 +1,29 @@
+{
+  "name": "snapnearn-vercel-monorepo",
+  "version": "1.0.0",
+  "description": "SnapNEarn - AI-Powered Road Safety & Traffic Violation Detection Application (Vercel Optimized)",
+  "private": true,
+  "scripts": {
+    "dev": "concurrently \"npm run api:dev\" \"npm run dashboard:dev\"",
+    "build": "npm run dashboard:build && npm run website:build",
+    "api:dev": "cd api && npm run dev",
+    "dashboard:dev": "cd apps/dashboard && npm run dev",
+    "dashboard:build": "cd apps/dashboard && npm run build",
+    "website:build": "cd apps/website && npm run build",
+    "install:all": "npm install && npm install --prefix api && npm install --prefix apps/dashboard && npm install --prefix apps/website && npm install --prefix apps/mobile",
+    "start": "node api/server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "workspaces": [
+    "api",
+    "apps/dashboard",
+    "apps/website",
+    "apps/mobile"
+  ],
+  "devDependencies": {
+    "concurrently": "^7.6.0"
+  },
+  "engines": {
+    "node": "18.x || 20.x"
+  }
+}
