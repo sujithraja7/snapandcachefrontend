@@ -1,7 +1,8 @@
 {
   "version": 2,
-  "buildCommand": "cd officer-dashboard && npm install && npm run build",
-  "outputDirectory": "officer-dashboard/dist",
+  "buildCommand": "cd website && npm install",
+  "outputDirectory": "website",
+  "public": "website",
   "functions": {
     "backend/api/**/*.js": {
       "memory": 1024,
@@ -19,7 +20,7 @@
     },
     {
       "src": "/(.*)",
-      "dest": "/officer-dashboard/dist/index.html",
+      "dest": "/website/index.html",
       "status": 200
     }
   ]
