@@ -2,25 +2,11 @@
   "version": 2,
   "buildCommand": "cd website && npm install && npm run build",
   "outputDirectory": "website/dist",
-  "functions": {
-    "backend/api/**/*.js": {
-      "memory": 1024,
-      "maxDuration": 30
-    }
-  },
-  "env": {
-    "NODE_ENV": "production"
-  },
+  "framework": null,
   "routes": [
     {
-      "src": "/api/(.*)",
-      "dest": "/backend/api/$1",
-      "methods": ["GET", "POST", "PUT", "DELETE", "PATCH", "OPTIONS"]
-    },
-    {
       "src": "/(.*)",
-      "dest": "/website/dist/index.html",
-      "status": 200
+      "dest": "/website/dist/index.html"
     }
   ]
 }
